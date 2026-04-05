@@ -5,7 +5,6 @@ class Solution:
         for n in nums:
             if majority == 0:
                 res = n
-            
             majority += 1 if n == res else -1
         
         return res

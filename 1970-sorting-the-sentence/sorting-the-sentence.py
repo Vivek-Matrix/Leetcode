@@ -5,4 +5,4 @@ class Solution:
         for i in s:
             index = int(i[-1])-1
             l[index] = i[:-1]
-        return " ".join(l).strip()
+        return " ".join(l)

@@ -2,9 +2,8 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         seen = dict()
         for i in range(len(nums)):
-            x = target - nums[i]
-            if x in seen:
-                return [i,seen[x]]
+            if target - nums[i] in seen:
+                return [i,seen[target - nums[i]]]
             seen[nums[i]] = i
         
 

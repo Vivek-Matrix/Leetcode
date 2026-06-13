@@ -1,5 +1,5 @@
 -- Write your PostgreSQL query statement belo
-SELECT firstName,lastName, city, state
-FROM person 
-LEFT JOIN address
-ON person.personID = address.personId
+SELECT p.firstName,p.lastName, a.city, a.state
+FROM person p
+LEFT JOIN address a
+ON p.personID = a.personId
